@@ -1,0 +1,7 @@
+requests
+pandas
+utils
+numpy
+scikit-learn
+matplotlib
+snakemake
