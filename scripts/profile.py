@@ -6,6 +6,7 @@ if not os.path.exists('./profiling'):
 columns=['class','Alcohol','Malic acid','Ash','Alcalinity_of_ash','Magnesium','Total_phenols','Flavanoids','Nonflavanoid_phenols','Proanthocyanins',
          'Color_intensity','Hue,','OD280_OD315_of_diluted_wines','Proline']
 df=pd.read_csv("./data/wine/wine.data", names=columns,
-                              sep=', ', engine='python')
+                              sep=',')
+print(df)
 profile= ProfileReport(df, title='Profiling Report')
 profile.to_file(os.path.join('profiling', "report.html"))
