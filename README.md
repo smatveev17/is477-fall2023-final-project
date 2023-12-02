@@ -3,7 +3,9 @@ In this project, we perform an analysis on the Wine data set from th UCI Machine
 
 ## Contributions
 Nora Duffy completed the README, 
+
 Sasha Matveev implemented the licenses for this repository, 
+
 ## Analysis
 
 ## Workflow
