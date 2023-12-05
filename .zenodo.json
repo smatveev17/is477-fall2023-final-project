@@ -1,0 +1,32 @@
+{
+    "creators": [
+        {
+           "orcid": "0009-0009-2775-9678",
+           "name": "Matveev, Sasha"
+        },
+        {
+           "orcid": "0009-0009-1002-5141",
+           "name": "Duffy, Nora"
+       }
+   ],
+
+    "license": "MIT",
+
+    "title": "Analysis of UCI Wine Data (IS477)",
+    "description": "Final project utilizing logistic regression to analyze UCI Wine data.",
+    "related_identifiers": [
+        {
+            "scheme": "doi",
+            "identifier": " 10.24432/C5PC7J",
+            "relation": "cites",
+            "resource_type": "dataset"
+        },
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project",
+            "relation": "isSupplementTo",
+            "resource_type": "workflow"
+        }
+    ],
+    "keywords": ["Wine", "UCI", "IS477"]
+}
