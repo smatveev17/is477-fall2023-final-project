@@ -8,13 +8,13 @@ response = requests.get(wine_url)
 if not os.path.exists('data'):
     os.makedirs('data')
 
-with open ('data\\wine\\wine.zip', mode='wb') as f:
+with open ('data/wine/wine.zip', mode='wb') as f:
     f.write(response.content)
 
-with zipfile.ZipFile ('data\\wine\\wine.zip') as z:
-    z.extractall('data/wine')
+with zipfile.ZipFile ('./data/wine/wine.zip') as z:
+    z.extractall('./data/wine')
 
-filename = 'data\\wine\\wine.zip'
+filename = 'data/wine/wine.zip'
 with open (filename, mode='rb') as f:
     data = f.read()
     sha256hash = hashlib.sha256(data).hexdigest()
