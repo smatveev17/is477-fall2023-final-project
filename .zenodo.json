@@ -22,9 +22,9 @@
         },
         {
             "scheme": "url",
-            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project/releases/tag/v0.0",
+            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project/releases/tag/v0.2",
             "relation": "isSupplementTo",
-            "resource_type": "workflow"
+            "resource_type": "software"
         }
     ],
     "keywords": ["Wine", "UCI", "IS477"],
