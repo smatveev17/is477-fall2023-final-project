@@ -1,6 +1,8 @@
 rule prepare:
     output:
-        "data/wine"
+        "data/wine/Index",
+        "data/wine/wine.data",
+        "data/wine/wine.names"
     shell:
         "python scripts/prepare_data.py"
 rule profile:
@@ -10,6 +12,8 @@ rule profile:
         "python scripts/profile.py"
 rule analyze:
     output:
-        "results"
+        "results/summary_statistics.csv",
+        "results/classification_report.txt",
+        "results/wine_classification_plot.pdf"
     shell:
         "python scripts/analysis.py"
