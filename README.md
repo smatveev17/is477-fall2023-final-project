@@ -26,3 +26,4 @@ Aeberhard,Stefan and Forina,M.. (1991). Wine. UCI Machine Learning Repository. h
   howpublished = {UCI Machine Learning Repository},
   note         = {{DOI}: https://doi.org/10.24432/C5PC7J}
 }
+[![DOI](https://zenodo.org/badge/725867809.svg)](https://zenodo.org/doi/10.5281/zenodo.10268872)

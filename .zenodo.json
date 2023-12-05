@@ -11,9 +11,8 @@
    ],
 
     "license": "MIT",
-
     "title": "Analysis of UCI Wine Data (IS477)",
-    "description": "Final project utilizing logistic regression to analyze UCI Wine data.",
+    "description": "Final project utilizing logistic regression to analyze UCI Wine data and correctly classify it based on the characteristics of the wine.",
     "related_identifiers": [
         {
             "scheme": "doi",
@@ -23,10 +22,11 @@
         },
         {
             "scheme": "url",
-            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project",
+            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project/releases/tag/v0.0",
             "relation": "isSupplementTo",
             "resource_type": "workflow"
         }
     ],
-    "keywords": ["Wine", "UCI", "IS477"]
+    "keywords": ["Wine", "UCI", "IS477"],
+    "upload_type":"software"
 }
