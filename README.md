@@ -1,3 +1,5 @@
+## Wine Data
+Analysis of UCI Wine Data (IS477)
 ## Overview
 In this project, we perform an analysis on the Wine data set from th UCI Machine Learning archive. This dataset uses chemical analysis to differentiate between wines that were made in the same region within Italy. This dataset looks at 13 different chemicals that make up each wine, and how much of each chemical is present in the different wines. In this repository, we performed...
 
@@ -27,5 +29,5 @@ Aeberhard,Stefan and Forina,M.. (1991). Wine. UCI Machine Learning Repository. h
   note         = {{DOI}: https://doi.org/10.24432/C5PC7J}
 }
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10269324.svg)](https://doi.org/10.5281/zenodo.10269324)
+
 
