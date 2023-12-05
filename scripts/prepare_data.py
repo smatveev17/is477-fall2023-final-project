@@ -1,7 +1,7 @@
 import requests
 import hashlib
 import os
-
+import zipfile
 wine_url = 'https://archive.ics.uci.edu/static/public/109/wine.zip'
 response = requests.get(wine_url)
 
@@ -10,6 +10,9 @@ if not os.path.exists('data'):
 
 with open ('data\\wine\\wine.zip', mode='wb') as f:
     f.write(response.content)
+
+with zipfile.ZipFile ('data\\wine\\wine.zip') as z:
+    z.extractall('data/wine')
 
 filename = 'data\\wine\\wine.zip'
 with open (filename, mode='rb') as f:
