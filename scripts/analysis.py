@@ -34,12 +34,17 @@ print("\nClassification Report:")
 print(classification_rep)
 print(f"\nAccuracy: {accuracy:.2f}")
 
+
+class_labels = ['Class 1', 'Class 2', 'Class 3']
+cmap = plt.cm.viridis
 plt.figure(figsize=(10, 6))
-plt.scatter(X_test['Alcohol'], X_test['Color Intensity'], c=y_test, cmap='viridis', edgecolors='k')
+scatter = plt.scatter(X_test['Alcohol'], X_test['Color Intensity'], c=y_test, cmap=cmap, edgecolors='k')
 plt.title('Wine Classification based on Alcohol and Color Intensity')
 plt.xlabel('Alcohol')
 plt.ylabel('Color Intensity')
+legend = plt.legend(handles=scatter.legend_elements()[0], title='Classes', labels=class_labels)
 plt.show()
+
 
 summary_stats.to_csv('results/summary_statistics.csv')
 with open('results/classification_report.txt', 'w') as f:
