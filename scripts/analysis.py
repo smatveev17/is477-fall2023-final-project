@@ -42,7 +42,9 @@ scatter = plt.scatter(X_test['Alcohol'], X_test['Color Intensity'], c=y_test, cm
 plt.title('Wine Classification based on Alcohol and Color Intensity')
 plt.xlabel('Alcohol')
 plt.ylabel('Color Intensity')
-legend = plt.legend(handles=scatter.legend_elements()[0], title='Classes', labels=class_labels)
+classes = sorted(df['Class'].unique())
+legend_labels = [f'Class {cls}' for cls in classes]
+plt.legend(handles=scatter.legend_elements()[0], labels=legend_labels, title='Class')
 plt.show()
 
 
