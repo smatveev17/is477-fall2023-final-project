@@ -1,9 +1,9 @@
 ## Wine Data
 Analysis of UCI Wine Data (IS477)
 ## Overview
-In this project, we perform an analysis on the Wine data set from th UCI Machine Learning archive. This dataset uses chemical analysis to differentiate between wines that were made in the same region within Italy. This dataset looks at 13 different features that make up each wine, and the quantity of each feature present in them. Each wine is sorted into one of 3 classes. 
+In this project, we perform an analysis on the Wine data set from th UCI Machine Learning archive. This dataset uses chemical analysis to differentiate between wines that were made in the same region within Italy. This dataset looks at 13 different features that make up each wine, and the quantity of each feature present in them. Each wine is sorted into one of 3 classes. The classes do not have a name provided in the original dataset so they are referenced as class 1,2,3 in this study.
 
-In this repository, there are descriptive statistics (standard deviation, mean, count, etc.) of the data in UCI Wine Data. Additionally, the dataset is used to perform a logistic regression on the relationship between a wine's class and the quantity of each of the 13 features in that wine. The regression model was performed on training data split from the original dataset, and accuracy of its predictions were found using testing data from that split. There is also a scatterplot displaying the relationship of the classification of a wine based on the amount of alcohol and color intensity in them.
+In this repository, there are descriptive statistics (standard deviation, mean, count, etc.) of the data in UCI Wine Data. Additionally, the dataset is used to perform a logistic regression on the relationship between a wine's class and the quantity of each of the 13 features in that wine. The regression model was performed on training data split from the original dataset, and accuracy of its predictions were found using testing data from that split. There is also a scatterplot displaying the relationship of the classification of a wine based on the amount of alcohol and color intensity in them. We were able to achieve a high accuracy of .97 and a weighted precision of .97 for the three classes. 
 
 ## Contributions
 Nora Duffy completed the README, snakefile, workflow visualization, profile.py and requirements.txt.
@@ -21,6 +21,8 @@ In the analysis described above, the test/train split on the logistic regression
 To reproduce the workflow, use the run_all step in the snakefile through the docker image provided 
 
 docker run --rm -v %cd%:/is477 matveev2/is477-fall2023-final-project:v1 snakemake --cores 1 run_all
+
+Running this with the is477-fall2023-final-project:v1 image from dockerhub will read in the dataset from the UCI website and unzip into the data folder if it is not there already, produce a profiling.html file that gives and overview of the data using the ydata package, as well as a graph of logistic regression results, a csv with summary statistics, and a classification report that contains metrics like precision, f-1, recall, and support. You can also run each step individualy (...snakemake -- cores 1 analyze/profile/prepare)
 ## License
 This repository is under an MIT license.
 ## References
