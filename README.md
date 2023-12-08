@@ -1,5 +1,5 @@
 # Analysis of UCI Wine Data (IS477)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10268872.svg)](https://doi.org/ 10.5281/zenodo.10268872)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10268872.svg)](https://doi.org/10.5281/zenodo.10268872)
 
 ## Overview
 In this project, we perform an analysis on the Wine data set from th UCI Machine Learning archive. This dataset uses chemical analysis to differentiate between wines that were made in the same region within Italy. This dataset looks at 13 different features that make up each wine, and the quantity of each feature present in them. Each wine is sorted into one of 3 classes. The classes do not have a name provided in the original dataset so they are referenced as class 1,2,3 in this study.
