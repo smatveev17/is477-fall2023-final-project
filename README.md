@@ -21,7 +21,9 @@ In the analysis described above, the test/train split on the logistic regression
 ## Reproducing 
 To reproduce the workflow, use the run_all step in the snakefile through the docker image provided 
 
+```bash
 docker run --rm -v %cd%:/is477 matveev2/is477-fall2023-final-project:v1 snakemake --cores 1 run_all
+```
 
 Running this with the is477-fall2023-final-project:v1 image from dockerhub will read in the dataset from the UCI website and unzip into the data folder if it is not there already, produce a profiling.html file that gives and overview of the data using the ydata package, as well as a graph of logistic regression results, a csv with summary statistics, and a classification report that contains metrics like precision, f-1, recall, and support. You can also run each step individualy (...snakemake -- cores 1 analyze/profile/prepare)
 
