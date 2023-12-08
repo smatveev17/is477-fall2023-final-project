@@ -5,7 +5,7 @@
 In this project, we perform an analysis on the Wine data set from th UCI Machine Learning archive. This dataset uses chemical analysis to differentiate between wines that were made in the same region within Italy. This dataset looks at 13 different features that make up each wine, and the quantity of each feature present in them. Each wine is sorted into one of 3 classes. The classes do not have a name provided in the original dataset so they are referenced as class 1,2,3 in this study.
 
 In this repository, there are descriptive statistics (standard deviation, mean, count, etc.) of the data in UCI Wine Data. Additionally, the dataset is used to perform a logistic regression on the relationship between a wine's class and the quantity of each of the 13 features in that wine. The regression model was performed on training data split from the original dataset, and accuracy of its predictions were found using testing data from that split. There is also a scatterplot displaying the relationship of the classification of a wine based on the amount of alcohol and color intensity in them. We were able to achieve a high accuracy of .97 and a weighted precision of .97 for the three classes. 
-![Graph output of logistic regression](results/wine_classification_plot.png)
+![Graph output of logistic regression](wine_classification_graph.PNG)
 
 ## Contributions
 Nora Duffy completed the README, snakefile, workflow visualization, profile.py and requirements.txt.
