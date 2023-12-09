@@ -37,7 +37,7 @@ docker run --rm -v %cd%:/is477 matveev2/is477-fall2023-final-project:v1 snakemak
 ```bash
 docker run --rm -v %cd%:/is477 matveev2/is477-fall2023-final-project:v1 snakemake --cores 1 analyze
 ```
-
+The docker image can be found at: https://hub.docker.com/repository/docker/matveev2/is477-fall2023-final-project/general
 ## License
 ### Software
 The software provided in this repository is open source (permissive MIT) license. Since the purpose of this repository is scientific and academic in nature, having a proprietary or hybrid software license would be counterproductive. Any restrictions on copying, redistributing or modifying the license would not only go against the principles of a reproducibility study, it would also needlessly complicate further studies as it would be tough to verify the results of our study which uses open-source data and proprietary software. 
