@@ -22,7 +22,7 @@
         },
         {
             "scheme": "url",
-            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project/releases/tag/v0.4",
+            "identifier": "https://github.com/smatveev17/is477-fall2023-final-project/releases/tag/v1",
             "relation": "isSupplementTo",
             "resource_type": "software"
         }
